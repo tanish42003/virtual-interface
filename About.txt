@@ -1,0 +1,42 @@
+1. Gesture Recognition (Using OpenCV & MediaPipe)
+
+Mouse Control: Moves the mouse cursor based on the index finger's position.
+Click Detection:
+Left Click: Recognized when the index finger is bent.
+Right Click: Recognized when the middle finger is bent.
+Double Click: Recognized when both index and middle fingers are bent together.
+Scrolling: Recognizes the "OK" gesture and scrolls up or down based on hand position.
+Voice Activation Gesture: A specific hand gesture activates voice commands.
+Voice Keyboard Gesture: A separate gesture enables speech-to-text typing.
+
+2. Voice Assistant Features (Using Speech Recognition & pyttsx3)
+
+Opening Applications: Finds applications on the desktop and opens them.
+Wikipedia Search: Fetches summaries from Wikipedia.
+Web Browsing:
+Opens Google, YouTube, Gmail.
+Searches Google and YouTube using pywhatkit.
+Weather Information: Fetches weather data using OpenWeather API.
+News Updates: Opens Times of India for latest news.
+Location Search: Opens Google Maps with a specified location.
+Mathematical & General Knowledge Queries: Uses WolframAlpha for computational questions.
+System Control: Can log off or shut down the system.
+
+3. Libraries Used
+
+cv2 (OpenCV): Captures video for hand tracking.
+mediapipe (MediaPipe): Detects hand landmarks.
+pyautogui: Controls mouse movements and keyboard typing.
+speech_recognition & pyttsx3: Handles voice commands and responses.
+wikipedia, webbrowser, pywhatkit: Fetches information and automates web browsing.
+requests: Retrieves weather data.
+pynput.mouse: Simulates mouse clicks.
+numpy: Handles calculations like distances and angles.
+
+4. How it Works
+
+The webcam captures hand movements.
+MediaPipe processes hand landmarks.
+The gesture detection functions analyze angles and distances to determine actions.
+If a voice activation gesture is detected, the assistant starts listening.
+Recognized voice commands trigger actions, like opening apps or browsing the web.
